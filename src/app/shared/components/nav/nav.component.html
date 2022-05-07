@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+  <aql-header></aql-header>
+  <span class="spacer"></span>
+  <button mat-icon-button routerLink="/">
+    <mat-icon>home</mat-icon>
+  </button>
+  <button mat-icon-button *ngIf="isLogged" routerLink="/aquarium">
+    <mat-icon>water</mat-icon>
+  </button>
+  <button mat-icon-button *ngIf="isLogged" routerLink="/atlas">
+    <mat-icon>menu_book</mat-icon>
+  </button>
+  <button mat-icon-button routerLink="/support">
+    <mat-icon>support</mat-icon>
+  </button>
+  <button mat-icon-button *ngIf="!isLogged" routerLink="/login">
+    <mat-icon>login</mat-icon>
+  </button>
+  <button mat-icon-button *ngIf="isLogged" routerLink="/logout">
+    <mat-icon>logout</mat-icon>
+  </button>
+  <button
+    mat-raised-button
+    color="basic"
+    *ngIf="!isLogged"
+    routerLink="/signin"
+  >
+    Registre-se
+  </button>
+</mat-toolbar>

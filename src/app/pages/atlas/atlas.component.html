@@ -1,0 +1,18 @@
+<div class="container flex">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Atlas</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Selecione um capítulo</p>
+      <mat-selection-list [multiple]="false" #chaptersList>
+        <mat-list-option
+          *ngFor="let chapter of chapters"
+          (click)="openChapter(chaptersList.selectedOptions.selected[0]?.value)"
+        >
+          {{ chapter.chapter }}
+        </mat-list-option>
+      </mat-selection-list>
+    </mat-card-content>
+  </mat-card>
+</div>
