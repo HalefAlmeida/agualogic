@@ -30,5 +30,28 @@
       "idealWaterTemp": "24 a 28 Celsius",
       "properties": "Sendo um peixe onívoro, poderia consumir outros peixes pequenos, como os peixes Tetra-néon, por exemplo, por isso devemos evitar juntá-los a este tipo de espécie."
     }
+  ],
+  "chapter": [
+    {
+      "id": 1,
+      "chapter": "Peixes",
+      "cover": "fish.jpeg",
+      "active": true,
+      "overview": "Peixe ornamental, ou peixe de aquário, é a designação dada em aquariofilia às espécies de peixes que são seleccionadas pela exuberância das suas cores e formas e pela facilidade de manutenção em cativeiro."
+    },
+    {
+      "id": 2,
+      "chapter": "Camarões",
+      "cover": "shrimp.jpeg",
+      "active": true,
+      "overview": "Os Camarões de água doce existem em uma variedade enorme de tamanhos e cores, sendo alguns mais adaptáveis ​​à vida do aquário do que outros. Também é importante notar que algumas espécies de camarão são mais indicadas em tanques sem peixe, porque alguns peixes atacam camarões e outros pequenos invertebrados"
+    },
+    {
+      "id": 3,
+      "chapter": "Caramujos",
+      "cover": "snail.jpeg",
+      "active": true,
+      "overview": "Os caramujos de aquário são animais detritívoros, ou seja, se alimentam de qualquer resíduo orgânico que se deposita no aquário, como restos de ração e animais mortos. Além disso, eles são excelentes algueiros. se alimentando dos mais distintos tipos de algas. principalmente das moles, como algas verdes e marrons."
+    }
   ]
 }

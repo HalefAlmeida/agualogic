@@ -15,6 +15,8 @@ import { SupportComponent } from './pages/support/support.component';
 import { AquariumComponent } from './pages/aquarium/aquarium.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ViewChapterComponent } from './pages/atlas/view-chapter/view-chapter.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ChapterComponent } from './pages/atlas/chapter/chapter.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { ViewChapterComponent } from './pages/atlas/view-chapter/view-chapter.co
     SupportComponent,
     AquariumComponent,
     ViewChapterComponent,
+    ChapterComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { ViewChapterComponent } from './pages/atlas/view-chapter/view-chapter.co
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
