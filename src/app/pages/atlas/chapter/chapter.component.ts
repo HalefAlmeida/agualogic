@@ -10,6 +10,8 @@ import { ChapterService } from 'src/app/shared/services/chapter.service';
   styleUrls: ['./chapter.component.css'],
 })
 export class ChapterComponent implements OnInit {
+  title: string = 'Atlas';
+
   chapters$: Observable<Chapter[]>;
   constructor(private router: Router, private chapterService: ChapterService) {}
 

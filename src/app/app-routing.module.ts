@@ -23,6 +23,11 @@ const routes: Routes = [
     path: 'atlas/:id',
     component: ViewChapterComponent,
   },
+
+  {
+    path: 'atlas/subchapter/:id',
+    component: ViewChapterComponent,
+  },
   {
     path: 'aquarium',
     component: AquariumComponent,

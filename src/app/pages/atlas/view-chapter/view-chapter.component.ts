@@ -28,7 +28,6 @@ export class ViewChapterComponent implements OnInit {
     this.chapterService.readById(this.chapterId).subscribe({
       next: (data) => {
         this.chapter = data;
-        console.log(this.chapter);
       },
     });
   }

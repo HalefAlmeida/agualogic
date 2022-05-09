@@ -34,6 +34,22 @@
   "chapter": [
     {
       "id": 1,
+      "chapter": "Fauna",
+      "cover": "flora.jpeg",
+      "active": true,
+      "overview": "Fauna é o termo usado para definir o grupo no qual se encontram todos os animais. Também corresponde ao conjunto dos animais característicos de determinada área, época ou bioma."
+    },
+    {
+      "id": 2,
+      "chapter": "Flora",
+      "cover": "flora.jpeg",
+      "active": true,
+      "overview": "De forma geral, a flora representa os organismos vivos do Reino Animal, ou seja, as plantas de determinada região. O termo designa, ainda, a variedade de plantas de um ecossistema ou bioma"
+    }
+  ],
+  "subchapter": [
+    {
+      "id": 1,
       "chapter": "Peixes",
       "cover": "fish.jpeg",
       "active": true,

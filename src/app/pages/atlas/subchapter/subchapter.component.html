@@ -1,0 +1,10 @@
+<aql-card [title]="title">
+  <mat-selection-list [multiple]="false" #subchaptersList>
+    <mat-list-option
+      *ngFor="let subchapter of subchapters$ | async"
+      (click)="openSubchapter(subchapter)"
+    >
+      {{ subchapter.chapter }}
+    </mat-list-option>
+  </mat-selection-list>
+</aql-card>
