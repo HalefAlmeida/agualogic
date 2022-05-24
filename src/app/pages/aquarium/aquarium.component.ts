@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Aquarium } from 'src/app/shared/models/aquarium';
+import { AquariumService } from 'src/app/shared/services/aquarium.service';
 
 @Component({
   selector: 'aql-aquarium',
@@ -7,22 +9,11 @@ import { Aquarium } from 'src/app/shared/models/aquarium';
   styleUrls: ['./aquarium.component.css'],
 })
 export class AquariumComponent implements OnInit {
-  aquariums: Aquarium[] = [
-    {
-      id: 1,
-      title: 'Aquário 1',
-      description: 'Aquário 1',
-      status: true,
-    },
-    {
-      id: 2,
-      title: 'Aquário 2',
-      description: 'Aquário 2',
-      status: true,
-    },
-  ];
+  aquariums$: Observable<Aquarium[]>;
 
-  constructor() {}
+  constructor(private aquariumService: AquariumService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.aquariums$ = this.aquariumService.readAll();
+  }
 }

@@ -69,5 +69,19 @@
       "active": true,
       "overview": "Os caramujos de aquário são animais detritívoros, ou seja, se alimentam de qualquer resíduo orgânico que se deposita no aquário, como restos de ração e animais mortos. Além disso, eles são excelentes algueiros. se alimentando dos mais distintos tipos de algas. principalmente das moles, como algas verdes e marrons."
     }
+  ],
+  "aquarium": [
+    {
+      "id": 1,
+      "title": "Aquário 1",
+      "description": "Aquário 1",
+      "status": true
+    },
+    {
+      "id": 2,
+      "title": "Aquário 2",
+      "description": "Aquário 2",
+      "status": true
+    }
   ]
 }

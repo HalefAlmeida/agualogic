@@ -3,7 +3,7 @@
 <aql-topbar></aql-topbar>
 
 <div class="flex flex-container">
-  <div *ngFor="let aquarium of aquariums">
+  <div *ngFor="let aquarium of aquariums$ | async">
     <aql-card
       class="flex flex-item"
       title="{{ aquarium.title }}"
