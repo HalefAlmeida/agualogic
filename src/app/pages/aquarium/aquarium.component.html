@@ -1,1 +1,17 @@
-<p>aquarium works!</p>
+<h1>Aquarium</h1>
+
+<aql-topbar></aql-topbar>
+
+<div class="flex flex-container">
+  <div *ngFor="let aquarium of aquariums">
+    <aql-card
+      class="flex flex-item"
+      title="{{ aquarium.title }}"
+      subtitle="{{ aquarium.description }}"
+      [edit]="true"
+      *ngIf="aquarium.status"
+    >
+      <p>Informações do aquário</p>
+    </aql-card>
+  </div>
+</div>

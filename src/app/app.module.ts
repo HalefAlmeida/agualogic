@@ -16,6 +16,7 @@ import { ChapterComponent } from './pages/atlas/chapter/chapter.component';
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './shared/material/material.module';
 import { SubchapterComponent } from './pages/atlas/subchapter/subchapter.component';
+import { TopbarComponent } from './pages/aquarium/topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SubchapterComponent } from './pages/atlas/subchapter/subchapter.compone
     ViewChapterComponent,
     ChapterComponent,
     SubchapterComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,

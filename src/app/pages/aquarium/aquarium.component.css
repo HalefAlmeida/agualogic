@@ -1,0 +1,13 @@
+.flex {
+  display: flex;
+}
+
+.flex-container {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex-direction: row;
+  margin-right: 10px;
+}
