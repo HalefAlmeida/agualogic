@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+}
+
+.container {
+  flex-direction: column;
+}
+.app-container {
+  margin-top: 10px;
+  width: 80%;
+  align-self: center;
+}
+
+aql-footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
