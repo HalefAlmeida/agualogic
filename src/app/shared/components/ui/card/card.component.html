@@ -11,8 +11,15 @@
       <ng-content #content></ng-content>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-icon-button *ngIf="edit"><mat-icon>edit</mat-icon></button>
-      <button mat-icon-button color="warn" *ngIf="delete">
+      <button mat-icon-button *ngIf="edit" (click)="editRecord()">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        color="warn"
+        *ngIf="delete"
+        (click)="deleteRecord()"
+      >
         <mat-icon>delete</mat-icon>
       </button>
     </mat-card-actions>

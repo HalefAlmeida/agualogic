@@ -18,4 +18,28 @@ export class AquariumService {
   public readById(recordId: number): Observable<Aquarium> {
     return this.http.readById(this.ENDPOINT, recordId);
   }
+
+  private create(record: Aquarium): Observable<Aquarium> {
+    return this.http.create(this.ENDPOINT, record);
+  }
+
+  private update(record: Aquarium): Observable<Aquarium> {
+    return this.http.update(this.ENDPOINT, record.id, record);
+  }
+
+  public delete(recordID: number): Observable<Aquarium> {
+    return this.http.delete(this.ENDPOINT, recordID);
+  }
+
+  /**
+   * Verifica se o objeto deve ser salvo ou criado na base de dados
+   * @param record Objeto a ser salvo
+   */
+  public save(record: Aquarium): Observable<Aquarium> {
+    if (record.id) {
+      return this.update(record);
+    } else {
+      return this.create(record);
+    }
+  }
 }

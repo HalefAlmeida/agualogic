@@ -1,0 +1,21 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flex-container mat-form-field {
+  width: 500px;
+}
+
+.flex-item {
+  margin-top: 10px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions button {
+  margin: 10px;
+}

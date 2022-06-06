@@ -1,0 +1,32 @@
+<h1>{{ title }}</h1>
+
+<form [formGroup]="form" class="flex-container">
+  <!-- CAMPO NOME -->
+  <mat-form-field class="flex-item">
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="title" required />
+    <mat-error *ngIf="form.invalid">{{ getErrorMessage("title") }}</mat-error>
+    <mat-hint>Nome a ser atribuído ao aquário</mat-hint>
+  </mat-form-field>
+
+  <!-- CAMPO DESCRIÇÃO -->
+  <mat-form-field class="flex-item">
+    <mat-label>Descrição</mat-label>
+    <textarea matInput formControlName="description"></textarea>
+    <mat-error *ngIf="form.invalid">{{
+      getErrorMessage("description")
+    }}</mat-error>
+    <mat-hint>Descrição do aquário</mat-hint>
+  </mat-form-field>
+
+  <!-- CAMPO STATUS -->
+  <div class="flex-item">
+    <mat-slide-toggle formControlName="status">Status</mat-slide-toggle>
+  </div>
+
+  <!-- AÇÕES DO FORMULÁRIO -->
+  <div class="actions">
+    <button mat-raised-button color="primary" (click)="submit()">Salvar</button>
+    <button mat-raised-button color="warn" (click)="cancel()">Cancelar</button>
+  </div>
+</form>

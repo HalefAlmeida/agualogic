@@ -1,17 +1,29 @@
 <h1>Aquarium</h1>
 
-<aql-topbar></aql-topbar>
+<div>
+  <button mat-raised-button color="primary" routerLink="/aquarium/new">
+    Novo aquário
+  </button>
+</div>
 
 <div class="flex flex-container">
   <div *ngFor="let aquarium of aquariums$ | async">
     <aql-card
       class="flex flex-item"
       title="{{ aquarium.title }}"
-      subtitle="{{ aquarium.description }}"
       [edit]="true"
+      [delete]="true"
+      (editing)="edit(aquarium.id)"
+      (hasDeleted)="
+        deleteDialog(
+          aquarium.id,
+          'Confirmar exclusão?',
+          'Deseja realmente excluir o registro?'
+        )
+      "
       *ngIf="aquarium.status"
     >
-      <p>Informações do aquário</p>
+      <p>{{ aquarium.description }}</p>
     </aql-card>
   </div>
 </div>
