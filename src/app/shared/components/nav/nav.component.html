@@ -1,9 +1,10 @@
 <mat-toolbar color="primary">
   <aql-header></aql-header>
   <span class="spacer"></span>
-  <button mat-icon-button routerLink="/">
+  <!-- Para ir na home, deve-se clicar no nome da aplicação -->
+  <!-- <button mat-icon-button routerLink="/">
     <mat-icon>home</mat-icon>
-  </button>
+  </button> -->
   <button mat-icon-button *ngIf="isLogged" routerLink="/aquarium">
     <mat-icon>water</mat-icon>
   </button>
