@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AquariumDetailsComponent } from './pages/aquarium/aquarium-details/aquarium-details.component';
+import { AquariumPanelComponent } from './pages/aquarium/aquarium-panel/aquarium-panel.component';
 import { AquariumComponent } from './pages/aquarium/aquarium.component';
 import { AtlasComponent } from './pages/atlas/atlas.component';
 import { ViewChapterComponent } from './pages/atlas/view-chapter/view-chapter.component';
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'aquarium/edit/:id',
     component: AquariumDetailsComponent,
+  },
+  {
+    path: 'aquarium/panel/:id',
+    component: AquariumPanelComponent,
   },
 ];
 

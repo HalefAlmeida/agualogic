@@ -17,6 +17,7 @@ import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from './shared/material/material.module';
 import { SubchapterComponent } from './pages/atlas/subchapter/subchapter.component';
 import { AquariumDetailsComponent } from './pages/aquarium/aquarium-details/aquarium-details.component';
+import { AquariumPanelComponent } from './pages/aquarium/aquarium-panel/aquarium-panel.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AquariumDetailsComponent } from './pages/aquarium/aquarium-details/aqua
     SubchapterComponent,
 
     AquariumDetailsComponent,
+      AquariumPanelComponent,
   ],
   imports: [
     BrowserModule,

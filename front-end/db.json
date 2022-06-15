@@ -1,6 +1,7 @@
 {
-  "fish": [
+  "animal": [
     {
+      "id": 1,
       "name": "Kinguio",
       "scientificName": "Carassius auratus",
       "description": "O kinguio é, sem dúvida, o primeiro colocado no ranking de peixes para aquário mais famosos, pois foi uma das primeiras espécies que o homem domesticou e começou a usar no aquarismo e em lagoas privadas. Esta espécie está na família Cyprinidae e é nativa do leste da Ásia. Também chamado de peixinho-dourado ou peixe-japonês, é pequeno em tamanho comparado com outras espécies de carpas, mede aproximadamente 25 cm e se adapta muito bem a diferentes condições ambientais. Entretanto, a temperatura ideal para sua água é de cerca de 20 ºC. Além disso, é uma espécie de vida muito longa, pois pode viver cerca de 30 anos. É uma espécie muito apreciada dentro da indústria de aquários devido à grande diversidade de cores e formas que pode ter, apesar de ser mais conhecido pelo dourado, existem peixes alaranjados, vermelhos, amarelos, pretos ou brancos. Algumas variedades têm um corpo mais alongado e outras mais arredondado, assim como suas nadadeiras caudais, que podem ser bifurcadas, veladas ou pontiagudas, entre outras formas.",
@@ -11,6 +12,7 @@
       "properties": "Algumas variedades têm um corpo mais alongado e outras mais arredondado, assim como suas nadadeiras caudais, que podem ser bifurcadas, veladas ou pontiagudas, entre outras formas."
     },
     {
+      "id": 2,
       "name": "Peixe-zebra",
       "scientificName": "Danio rerio",
       "description": "Nativo do sudeste asiático, o peixe-zebra pertence à família Cyprinidae e é típico de rios, lagos e lagoas. Seu tamanho é muito pequeno, não excedendo 5 cm, com as fêmeas sendo um pouco maiores que os machos e menos alongadas. Tem um desenho com faixas longitudinais azuis nas laterais do corpo, daí seu nome, e parece ter uma cor prateada, mas é praticamente transparente. Eles são muito dóceis, vivem em pequenos grupos e podem coexistir muito bem com outras espécies tranquilas. A temperatura ideal do aquário não deve exceder 26 ºC e um detalhe a ser levado em conta é que estes peixes se aventuram, de vez em quando, a saltar sobre a superfície, por isso é vital manter o aquário coberto com uma malha que impeça que ele caia para fora da água.",
@@ -21,6 +23,7 @@
       "properties": "De vez em quando, a saltar sobre a superfície, por isso é vital manter o aquário coberto com uma malha que impeça que ele caia para fora da água."
     },
     {
+      "id": 3,
       "name": "Peixe escalar ou Acará-bandeira",
       "scientificName": "Pterophyllum scalare",
       "description": "O Acará-bandeira é um membro da família Cichlidae e é endêmico na América do Sul. É uma espécie de tamanho médio e pode atingir 15 cm de comprimento. Tem uma forma corporal muito estilizada. Por este motivo, além de suas cores, é muito procuradok pelos amantes da aquariofilia. Na lateral, sua forma é semelhante a um triângulo, com nadadeiras dorsais e anais muito longas, e têm uma grande variedade de cores, pode haver variedades cinzas ou alaranjadas e com manchas escuras. É uma espécie muito sociável, por isso em geral coexiste bem com outros peixes de tamanho semelhante, mas sendo um peixe onívoro, poderia consumir outros peixes pequenos, como os peixes Tetra-néon, por exemplo, por isso devemos evitar juntá-los a este tipo de espécie. A temperatura ideal para o aquário do peixe escalar deve ser quente, entre 24 a 28°C.",

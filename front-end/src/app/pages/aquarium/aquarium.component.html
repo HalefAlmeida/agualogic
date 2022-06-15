@@ -22,6 +22,7 @@
         )
       "
       *ngIf="aquarium.status"
+      (click)="openAquarium(aquarium.id)"
     >
       <p>{{ aquarium.description }}</p>
     </aql-card>

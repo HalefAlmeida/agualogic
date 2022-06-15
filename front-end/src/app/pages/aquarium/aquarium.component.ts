@@ -73,4 +73,12 @@ export class AquariumComponent implements OnInit {
       }
     });
   }
+
+  /**
+   * Abre o painel com todas as informações do aquário
+   * @param id Aquario que terá seu painel aberto
+   */
+  openAquarium(id: number) {
+    this.router.navigateByUrl(`/aquarium/panel/${id}`);
+  }
 }
