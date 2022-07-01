@@ -1,0 +1,36 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+application:
+  description: AquaLogic API
+  version: 0.1.0
+
+springDEV:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/aqualogicdb
+    username: postgres
+    password: aloisk
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: postgres://agjzrpojsvxbzu:3e30eb91a7141980b43605252e1ab08a7a8c10ac221e9479d7d3ca122eb3ec81@ec2-52-202-152-4.compute-1.amazonaws.com:5432/dc3qfueir96bub
+#    username: agjzrpojsvxbzu
+#    password: 3e30eb91a7141980b43605252e1ab08a7a8c10ac221e9479d7d3ca122eb3ec81
+
+#    jpa:
+#      show-sql: true
+#      database-platform: org.hibernate.dialect.PostgreSQLDialect
+#      generate-ddl: true
+#      hibernate:
+#        ddl-auto: none
