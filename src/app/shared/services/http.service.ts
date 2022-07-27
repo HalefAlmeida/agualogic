@@ -10,7 +10,7 @@ import { Aquarium } from '../models/aquarium';
 export class HttpService<T> {
   private readonly API_URL: string = `${environment.API_URL}`;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   /**
    * Obtém um Observable com todos os objetos cadastrados na URL informada
@@ -58,6 +58,6 @@ export class HttpService<T> {
    * @returns Observable com o registro atualizado
    */
   public update(endpoint: string, recordID: number, record: T): Observable<T> {
-    return this.http.put<T>(`${this.API_URL}/${endpoint}/${recordID}`, record);
+    return this.http.put<T>(`${this.API_URL}/${endpoint}`, record);
   }
 }

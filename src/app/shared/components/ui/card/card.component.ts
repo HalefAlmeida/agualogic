@@ -10,12 +10,13 @@ export class CardComponent implements OnInit {
   @Input() subtitle: string = '';
   @Input() edit: boolean = false;
   @Input() delete: boolean = false;
+  @Input() disabled: boolean = false;
   @Output() hasDeleted = new EventEmitter<boolean>();
   @Output() editing = new EventEmitter<boolean>();
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   deleteRecord() {
     //Ao clicar no botão delete, emite boolean para a exclusão ao componente pai

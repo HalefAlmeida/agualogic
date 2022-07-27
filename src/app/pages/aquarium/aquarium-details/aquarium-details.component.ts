@@ -28,10 +28,10 @@ export class AquariumDetailsComponent implements OnInit {
   ) {
     //Atribuindo ao formulário os campos a serem utilizados e suas respectivas validações
     this.form = this.fb.group({
-      id: [null, [Validators.required]],
-      title: ['', [Validators.required, Validators.minLength(3)]],
-      description: ['', [Validators.minLength(3), Validators.maxLength(250)]],
-      status: [true, [Validators.required]],
+      nr_sequencia: [null, [Validators.required]],
+      nm_aquarium: ['', [Validators.required, Validators.minLength(3)]],
+      ds_descricao: ['', [Validators.minLength(3), Validators.maxLength(250)]],
+      ie_status: [true, [Validators.required]],
     });
   }
 
@@ -52,10 +52,10 @@ export class AquariumDetailsComponent implements OnInit {
         next: (data) => {
           //Após obter os dados, preenche o formulário
           this.form.patchValue({
-            id: data.id,
-            title: data.title,
-            description: data.description,
-            status: data.status,
+            nr_sequencia: data.nr_sequencia,
+            nm_aquarium: data.nm_aquarium,
+            ds_descricao: data.ds_descricao,
+            ie_status: data.ie_status,
           });
         },
       });

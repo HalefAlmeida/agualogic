@@ -10,21 +10,21 @@
   <div *ngFor="let aquarium of aquariums$ | async">
     <aql-card
       class="flex flex-item"
-      title="{{ aquarium.title }}"
+      title="{{ aquarium.nm_aquarium }}"
       [edit]="true"
       [delete]="true"
-      (editing)="edit(aquarium.id)"
+      [disabled]="aquarium.ie_status"
+      (editing)="edit(aquarium.nr_sequencia)"
       (hasDeleted)="
         deleteDialog(
-          aquarium.id,
+          aquarium.nr_sequencia,
           'Confirmar exclusão?',
           'Deseja realmente excluir o registro?'
         )
       "
-      *ngIf="aquarium.status"
-      (click)="openAquarium(aquarium.id)"
+      (click)="openAquarium(aquarium.nr_sequencia)"
     >
-      <p>{{ aquarium.description }}</p>
+      <p>{{ aquarium.ds_descricao }}</p>
     </aql-card>
   </div>
 </div>

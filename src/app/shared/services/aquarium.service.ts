@@ -9,7 +9,7 @@ import { HttpService } from './http.service';
 export class AquariumService {
   private readonly ENDPOINT: string = 'aquarium';
 
-  constructor(private http: HttpService<Aquarium>) {}
+  constructor(private http: HttpService<Aquarium>) { }
 
   public readAll(): Observable<Aquarium[]> {
     return this.http.readAll(this.ENDPOINT);
@@ -24,7 +24,7 @@ export class AquariumService {
   }
 
   private update(record: Aquarium): Observable<Aquarium> {
-    return this.http.update(this.ENDPOINT, record.id, record);
+    return this.http.update(this.ENDPOINT, record.nr_sequencia, record);
   }
 
   public delete(recordID: number): Observable<Aquarium> {
@@ -36,7 +36,7 @@ export class AquariumService {
    * @param record Objeto a ser salvo
    */
   public save(record: Aquarium): Observable<Aquarium> {
-    if (record.id) {
+    if (record.nr_sequencia) {
       return this.update(record);
     } else {
       return this.create(record);
